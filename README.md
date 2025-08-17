@@ -112,3 +112,6 @@ uv run python tg2hugo.py --ndjson ./tg_export/messages.ndjson --out ./site/conte
 ```
 hugo server --buildDrafts
 ```
+
+### 4. Лицензия
+MIT
