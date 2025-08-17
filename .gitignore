@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+.uv/
+.pytest_cache/
+.mypy_cache/
+
+# IDE (PyCharm / VSCode)
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Telethon sessions
+*.session
+*.session-journal
+
+# Local settings
+.env
+.env.local
+
+# Exported Telegram data
+tg_export/
+site/
+media/
+static/
+
+# Hugo cache/output
+public/
+resources/_gen/
+hugo_stats.json

@@ -1,0 +1,37 @@
+[project]
+name = "tgtohugoconverter"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "markdownify>=1.2.0",
+    "python-dotenv>=1.1.1",
+    "python-slugify>=8.0.4",
+    "telethon>=1.40.0",
+    "tqdm>=4.67.1",
+    "tzdata>=2025.2",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+extend-select = [
+    "I",   # import sort (замена isort)
+    "UP",  # python upgrade (подсказки по новому синтаксису)
+    "B",   # bugbear (ловит потенциальные баги)
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+]
+ignore = [
+    "E501", # игнор длинных строк (black сам их чинит)
+]
+
+[tool.ruff.format]
+# Включает автоформатирование совместимое с black
+quote-style = "double"
+indent-style = "space"
